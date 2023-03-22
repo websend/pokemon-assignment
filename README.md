@@ -10,6 +10,7 @@ Het doel van deze opdracht is om Pokémon in het wild te kunnen vangen en toe te
 - Run `rails db:seed` om trainer Ash Ketchum met Pikachu als Pokémon aan te maken
 
 ### Acceptatiecriteria
+De volgende criteria zijn losse features en kunnen opeenvolgend worden geïmplementeerd. Probeer eerst een feature af te ronden, voordat met de volgende feature gestart wordt.
 
 1. Wanneer je binnenkomt op `/encounters/new` start een encounter met een willekeurige Pokémon
     - De volgende restricties gelden:
