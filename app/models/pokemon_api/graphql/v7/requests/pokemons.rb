@@ -3,12 +3,12 @@ module PokemonApi
     module V7
       module Requests
         class Pokemons
-          # NOTE: For now we're only importing the first 50 Pokemon
+          # NOTE: For now we're only importing a subset of the data
           def self.retrieve
             response = PokemonApi::Graphql::V7::Client.query(
               <<~GRAPHQL
                 query {
-                  getAllPokemon(offset: 89, take: 50) {
+                  getAllPokemon(offset: 89, take: 100) {
                     key
                     baseStats {
                       attack

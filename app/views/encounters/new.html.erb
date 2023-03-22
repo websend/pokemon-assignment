@@ -1,0 +1,38 @@
+<div class="hero h-auto p-20">
+  <div class="hero-content">
+    <div class="max-w-md">
+      <% if @wild_pokemon.present? %>
+        <h1 class="font-bold text-center">You found a wild level <%= @wild_pokemon.level %> <%= @wild_pokemon.name %>!</h1>
+
+        <div class="card w-96 shadow-xl mt-20">
+          <div class="card-image border-solid border-2 border-primary-content rounded-tl-xl rounded-tr-lg">
+            <figure class="image-full" style="height:150px">
+              <%= image_tag(@wild_pokemon.sprite) %>
+            </figure>
+          </div>
+          <div class="card-body bg-primary-content rounded-bl-xl rounded-br-lg">
+            <h2 class="card-title">
+              <div class="badge badge-primary"><%= @wild_pokemon.dex_index %></div>
+              <label for=<%= "my-modal-#{@wild_pokemon.id}" %> class="link link-hover">
+                <%= @wild_pokemon.slug.titleize %>
+              </label>
+            </h2>
+            <p><%= @wild_pokemon.description %></p>
+            <div class="justify-end">
+              <% @wild_pokemon.pokemon_types.each do |pokemon_type| %>
+                <div class="badge badge-outline"><%= pokemon_type %></div>
+              <% end %>
+            </div>
+            <div class="divider"></div>
+            <div class="card-actions justify-center">
+              <%= link_to "Fight!", new_battle_path(battle_type: "pve", opponent_id: @wild_pokemon.id), class: "btn btn-primary" %>
+              <%= link_to "Run!", root_path, class: "btn btn-outline" %>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <h1 class="font-bold text-center">No pokemon found, better luck next time.</h1>
+      <% end %>
+    </div>
+  </div>
+</div>

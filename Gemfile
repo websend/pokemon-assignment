@@ -57,6 +57,9 @@ gem "httparty"
 # Pagination
 gem "pagy", "~> 5.10"
 
+# State Machine
+gem 'aasm'
+
 group :development, :test do
   # Debugging tool
   gem "pry"

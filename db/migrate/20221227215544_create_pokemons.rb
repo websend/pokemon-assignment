@@ -4,21 +4,6 @@ class CreatePokemons < ActiveRecord::Migration[7.0]
       t.references :base_pokemon, null: false, foreign_key: true
       t.references :trainer, foreign_key: true
 
-      t.string :name
-      t.string :slug
-      t.string :state
-      t.integer :position
-      t.float :height
-      t.float :weight
-      t.boolean :in_team
-
-      t.integer :hp_iv
-      t.integer :attack_iv
-      t.integer :special_attack_iv
-      t.integer :defense_iv
-      t.integer :special_defense_iv
-      t.integer :speed_iv
-
       t.integer :hp
       t.integer :attack
       t.integer :special_attack

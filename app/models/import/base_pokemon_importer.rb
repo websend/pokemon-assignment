@@ -21,10 +21,13 @@ module Import
     def self.import_pokemon(api_pokemon)
       api_base_stats = api_pokemon["baseStats"]
 
-      ::BasePokemon.find_or_create_by(
+      base_pokemon = ::BasePokemon.find_or_create_by(
         dex_index: api_pokemon["num"],
         name: api_pokemon["key"].try(:titleize),
-        slug: api_pokemon["key"],
+        slug: api_pokemon["key"]
+      )
+
+      base_pokemon.update(
         description: Array(api_pokemon["flavorTexts"]).pluck("flavor").first,
         pokemon_types: Array(api_pokemon["types"]).pluck("name").compact,
         sprite: api_pokemon["sprite"],
@@ -41,6 +44,8 @@ module Import
         special_defense: api_base_stats["specialdefense"],
         speed: api_base_stats["speed"]
       )
+
+      base_pokemon
     end
 
     attr_reader :pokemon, :api_pokemon
@@ -51,7 +56,7 @@ module Import
     end
 
     def import_and_link_abilities
-      api_abilities = api_pokemon["abilities"]
+      api_abilities = Array(api_pokemon["abilities"])
 
       abilities = api_abilities.map do |_, api_ability|
         Ability.find_or_create_by(
@@ -67,7 +72,7 @@ module Import
     end
 
     def import_and_link_moves
-      api_learn_sets = api_pokemon["learnsets"]
+      api_learn_sets = Array(api_pokemon["learnsets"])
 
       api_learn_sets.each do |_, value|
         Array(value["levelUpMoves"]).each do |api_level_up_move|
