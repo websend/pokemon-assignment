@@ -1,0 +1,1317 @@
+{
+  "data": {
+    "getAllPokemon": [
+      {
+        "key": "bulbasaur",
+        "baseStats": {
+          "attack": 49,
+          "defense": 49,
+          "hp": 45,
+          "specialattack": 65,
+          "specialdefense": 65,
+          "speed": 45
+        },
+        "baseStatsTotal": 318,
+        "catchRate": {
+          "base": 45
+        },
+        "evolutionLevel": null,
+        "preevolutions": null,
+        "flavorTexts": [
+          {
+            "flavor": "For some time after its birth, it grows by taking nourishment from the seed on its back.",
+            "game": "Shining Pearl"
+          }
+        ],
+        "forme": null,
+        "height": 0.7,
+        "levellingRate": "Medium Slow",
+        "num": 1,
+        "learnsets": {
+          "generation3": {
+            "levelUpMoves": [
+              {
+                "move": {
+                  "key": "growl",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's Attack by 1 stage.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growl",
+                  "pp": 40,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) Attack by 1.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 4
+              },
+              {
+                "move": {
+                  "key": "growth",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Beautiful",
+                  "desc": "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growth",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
+                  "target": "Self",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 32
+              },
+              {
+                "move": {
+                  "key": "leechseed",
+                  "accuracy": 90,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": null,
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Leech Seed",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "1/8 of target's HP is restored to user every turn.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 7
+              },
+              {
+                "move": {
+                  "key": "poisonpowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Poisons the target.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Poison Powder",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "Poisons the target.",
+                  "target": "Normal",
+                  "type": "Poison",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "razorleaf",
+                  "accuracy": 95,
+                  "basePower": "55",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "Has a higher chance for a critical hit.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 110,
+                  "name": "Razor Leaf",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+                  "target": "Adjacent Foes",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 20
+              },
+              {
+                "move": {
+                  "key": "sleeppowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Causes the target to fall asleep.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sleep Powder",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "Puts the target to sleep.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "solarbeam",
+                  "accuracy": 100,
+                  "basePower": "120",
+                  "category": "Special",
+                  "contestType": "Cool",
+                  "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 140,
+                  "name": "Solar Beam",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 190
+                },
+                "generation": 3,
+                "level": 46
+              },
+              {
+                "move": {
+                  "key": "sweetscent",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's evasiveness by 2 stages.",
+                  "isFieldMove": "The Pokémon can activate a wild Pokémon battle in tall grass, caves, and water. It can be taught to a Pokémon by using TM12 in Generation II, and it can be learned by many Grass-type Pokémon.",
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sweet Scent",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) evasiveness by 2.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 25
+              },
+              {
+                "move": {
+                  "key": "synthesis",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Synthesis",
+                  "pp": 5,
+                  "priority": 0,
+                  "shortDesc": "Heals the user by a weather-dependent amount.",
+                  "target": "Self",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 39
+              },
+              {
+                "move": {
+                  "key": "tackle",
+                  "accuracy": 100,
+                  "basePower": "40",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 90,
+                  "name": "Tackle",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "vinewhip",
+                  "accuracy": 100,
+                  "basePower": "45",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 100,
+                  "name": "Vine Whip",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 10
+              }
+            ]
+          },
+          "generation4": {
+            "levelUpMoves": [
+              {
+                "move": {
+                  "key": "doubleedge",
+                  "accuracy": 100,
+                  "basePower": "120",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 140,
+                  "name": "Double-Edge",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "Has 33% recoil.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 190
+                },
+                "generation": 4,
+                "level": 27
+              },
+              {
+                "move": {
+                  "key": "growl",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's Attack by 1 stage.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growl",
+                  "pp": 40,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) Attack by 1.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 3
+              },
+              {
+                "move": {
+                  "key": "growth",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Beautiful",
+                  "desc": "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growth",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
+                  "target": "Self",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 25
+              },
+              {
+                "move": {
+                  "key": "leechseed",
+                  "accuracy": 90,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "The Pokémon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If Big Root is held by the recipient, the HP recovered is 1.3x normal, rounded half down. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin successfully, the effect ends. Grass-type Pokémon are immune to this move on use, but not its effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Leech Seed",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "1/8 of target's HP is restored to user every turn.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 7
+              },
+              {
+                "move": {
+                  "key": "poisonpowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Poisons the target.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Poison Powder",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "Poisons the target.",
+                  "target": "Normal",
+                  "type": "Poison",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 13
+              },
+              {
+                "move": {
+                  "key": "razorleaf",
+                  "accuracy": 95,
+                  "basePower": "55",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "Has a higher chance for a critical hit.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 110,
+                  "name": "Razor Leaf",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+                  "target": "Adjacent Foes",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 4,
+                "level": 19
+              },
+              {
+                "move": {
+                  "key": "seedbomb",
+                  "accuracy": 100,
+                  "basePower": "80",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 130,
+                  "name": "Seed Bomb",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 160
+                },
+                "generation": 4,
+                "level": 37
+              },
+              {
+                "move": {
+                  "key": "sleeppowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Causes the target to fall asleep.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sleep Powder",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "Causes the target to fall asleep.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 13
+              },
+              {
+                "move": {
+                  "key": "sweetscent",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's evasiveness by 2 stages.",
+                  "isFieldMove": "The Pokémon can activate a wild Pokémon battle in tall grass, caves, and water. It can be taught to a Pokémon by using TM12 in Generation II, and it can be learned by many Grass-type Pokémon.",
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sweet Scent",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) evasiveness by 2.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 21
+              },
+              {
+                "move": {
+                  "key": "synthesis",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Synthesis",
+                  "pp": 5,
+                  "priority": 0,
+                  "shortDesc": "Heals the user by a weather-dependent amount.",
+                  "target": "Self",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 33
+              },
+              {
+                "move": {
+                  "key": "tackle",
+                  "accuracy": 100,
+                  "basePower": "40",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 90,
+                  "name": "Tackle",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 100
+                },
+                "generation": 4,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "takedown",
+                  "accuracy": 85,
+                  "basePower": "90",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 130,
+                  "name": "Take Down",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Has 1/4 recoil.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 175
+                },
+                "generation": 4,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "vinewhip",
+                  "accuracy": 100,
+                  "basePower": "45",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": "Past",
+                  "isZ": null,
+                  "maxMovePower": 100,
+                  "name": "Vine Whip",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 4,
+                "level": 9
+              },
+              {
+                "move": {
+                  "key": "worryseed",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Causes the target's Ability to become Insomnia. Fails if the target's Ability is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Worry Seed",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "The target's Ability becomes Insomnia.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 4,
+                "level": 31
+              }
+            ]
+          }
+        },
+        "otherFormes": null,
+        "species": "bulbasaur",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/bulbasaur.gif",
+        "types": [
+          {
+            "name": "Grass"
+          },
+          {
+            "name": "Poison"
+          }
+        ],
+        "abilities": {
+          "first": {
+            "key": "overgrow",
+            "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Overgrow_(Ability)",
+            "desc": "When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.",
+            "isFieldAbility": null,
+            "name": "Overgrow",
+            "serebiiPage": "https://www.serebii.net/abilitydex/overgrow.shtml",
+            "shortDesc": "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Grass attacks.",
+            "smogonPage": "https://www.smogon.com/dex/ss/abilities/overgrow"
+          }
+        },
+        "weight": 6.9
+      },
+      {
+        "key": "ivysaur",
+        "baseStats": {
+          "attack": 62,
+          "defense": 63,
+          "hp": 60,
+          "specialattack": 80,
+          "specialdefense": 80,
+          "speed": 60
+        },
+        "baseStatsTotal": 405,
+        "catchRate": {
+          "base": 45
+        },
+        "evolutionLevel": "16",
+        "evolutions": [
+          {
+            "num": 3,
+            "key": "venusaur"
+          }
+        ],
+        "flavorTexts": [
+          {
+            "flavor": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flower's coming bloom.",
+            "game": "Shining Pearl"
+          }
+        ],
+        "forme": null,
+        "height": 1,
+        "levellingRate": "Medium Slow",
+        "num": 2,
+        "learnsets": {
+          "generation3": {
+            "levelUpMoves": [
+              {
+                "move": {
+                  "key": "growl",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's Attack by 1 stage.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growl",
+                  "pp": 40,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) Attack by 1.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "growth",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Beautiful",
+                  "desc": "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growth",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
+                  "target": "Self",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 38
+              },
+              {
+                "move": {
+                  "key": "leechseed",
+                  "accuracy": 90,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": null,
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Leech Seed",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "1/8 of target's HP is restored to user every turn.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "poisonpowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Poisons the target.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Poison Powder",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "Poisons the target.",
+                  "target": "Normal",
+                  "type": "Poison",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "razorleaf",
+                  "accuracy": 95,
+                  "basePower": "55",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "Has a higher chance for a critical hit.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 110,
+                  "name": "Razor Leaf",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+                  "target": "Adjacent Foes",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 22
+              },
+              {
+                "move": {
+                  "key": "sleeppowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Causes the target to fall asleep.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sleep Powder",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "Puts the target to sleep.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "solarbeam",
+                  "accuracy": 100,
+                  "basePower": "120",
+                  "category": "Special",
+                  "contestType": "Cool",
+                  "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 140,
+                  "name": "Solar Beam",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 190
+                },
+                "generation": 3,
+                "level": 56
+              },
+              {
+                "move": {
+                  "key": "sweetscent",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's evasiveness by 2 stages.",
+                  "isFieldMove": "The Pokémon can activate a wild Pokémon battle in tall grass, caves, and water. It can be taught to a Pokémon by using TM12 in Generation II, and it can be learned by many Grass-type Pokémon.",
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sweet Scent",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) evasiveness by 2.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 29
+              },
+              {
+                "move": {
+                  "key": "synthesis",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Synthesis",
+                  "pp": 5,
+                  "priority": 0,
+                  "shortDesc": "Heals the user by a weather-dependent amount.",
+                  "target": "Self",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 47
+              },
+              {
+                "move": {
+                  "key": "tackle",
+                  "accuracy": 100,
+                  "basePower": "40",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 90,
+                  "name": "Tackle",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "vinewhip",
+                  "accuracy": 100,
+                  "basePower": "45",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 100,
+                  "name": "Vine Whip",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 10
+              }
+            ]
+          }
+        },
+        "otherFormes": null,
+        "species": "ivysaur",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/ivysaur.gif",
+        "types": [
+          {
+            "name": "Grass"
+          },
+          {
+            "name": "Poison"
+          }
+        ],
+        "abilities": {
+          "first": {
+            "key": "overgrow",
+            "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Overgrow_(Ability)",
+            "desc": "When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.",
+            "isFieldAbility": null,
+            "name": "Overgrow",
+            "serebiiPage": "https://www.serebii.net/abilitydex/overgrow.shtml",
+            "shortDesc": "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Grass attacks.",
+            "smogonPage": "https://www.smogon.com/dex/ss/abilities/overgrow"
+          }
+        },
+        "weight": 13
+      },
+      {
+        "key": "venusaur",
+        "baseStats": {
+          "attack": 82,
+          "defense": 83,
+          "hp": 80,
+          "specialattack": 100,
+          "specialdefense": 100,
+          "speed": 80
+        },
+        "baseStatsTotal": 525,
+        "catchRate": {
+          "base": 45
+        },
+        "evolutionLevel": "32",
+        "evolutions": null,
+        "flavorTexts": [
+          {
+            "flavor": "After a rainy day, the flower on its back smells stronger. The scent attracts other Pokémon.",
+            "game": "Shining Pearl"
+          }
+        ],
+        "forme": null,
+        "height": 2,
+        "levellingRate": "Medium Slow",
+        "num": 3,
+        "learnsets": {
+          "generation3": {
+            "levelUpMoves": [
+              {
+                "move": {
+                  "key": "growl",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's Attack by 1 stage.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growl",
+                  "pp": 40,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) Attack by 1.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "growth",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Beautiful",
+                  "desc": "Raises the user's Attack and Special Attack by 1 stage. If the weather is Sunny Day or Desolate Land, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Growth",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Raises user's Attack and Sp. Atk by 1; 2 in Sun.",
+                  "target": "Self",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 41
+              },
+              {
+                "move": {
+                  "key": "leechseed",
+                  "accuracy": 90,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": null,
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Leech Seed",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "1/8 of target's HP is restored to user every turn.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "poisonpowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Poisons the target.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Poison Powder",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "Poisons the target.",
+                  "target": "Normal",
+                  "type": "Poison",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "razorleaf",
+                  "accuracy": 95,
+                  "basePower": "55",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "Has a higher chance for a critical hit.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 110,
+                  "name": "Razor Leaf",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+                  "target": "Adjacent Foes",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 22
+              },
+              {
+                "move": {
+                  "key": "sleeppowder",
+                  "accuracy": 75,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "Causes the target to fall asleep.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sleep Powder",
+                  "pp": 15,
+                  "priority": 0,
+                  "shortDesc": "Puts the target to sleep.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 15
+              },
+              {
+                "move": {
+                  "key": "solarbeam",
+                  "accuracy": 100,
+                  "basePower": "120",
+                  "category": "Special",
+                  "contestType": "Cool",
+                  "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 140,
+                  "name": "Solar Beam",
+                  "pp": 10,
+                  "priority": 0,
+                  "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 190
+                },
+                "generation": 3,
+                "level": 65
+              },
+              {
+                "move": {
+                  "key": "sweetscent",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Cute",
+                  "desc": "Lowers the target's evasiveness by 2 stages.",
+                  "isFieldMove": "The Pokémon can activate a wild Pokémon battle in tall grass, caves, and water. It can be taught to a Pokémon by using TM12 in Generation II, and it can be learned by many Grass-type Pokémon.",
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Sweet Scent",
+                  "pp": 20,
+                  "priority": 0,
+                  "shortDesc": "Lowers the foe(s) evasiveness by 2.",
+                  "target": "Adjacent Foes",
+                  "type": "Normal",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 29
+              },
+              {
+                "move": {
+                  "key": "synthesis",
+                  "accuracy": 100,
+                  "basePower": "0",
+                  "category": "Status",
+                  "contestType": "Clever",
+                  "desc": "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": null,
+                  "name": "Synthesis",
+                  "pp": 5,
+                  "priority": 0,
+                  "shortDesc": "Heals the user by a weather-dependent amount.",
+                  "target": "Self",
+                  "type": "Grass",
+                  "zMovePower": 0
+                },
+                "generation": 3,
+                "level": 53
+              },
+              {
+                "move": {
+                  "key": "tackle",
+                  "accuracy": 100,
+                  "basePower": "40",
+                  "category": "Physical",
+                  "contestType": "Tough",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 90,
+                  "name": "Tackle",
+                  "pp": 35,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Normal",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 1
+              },
+              {
+                "move": {
+                  "key": "vinewhip",
+                  "accuracy": 100,
+                  "basePower": "45",
+                  "category": "Physical",
+                  "contestType": "Cool",
+                  "desc": "No additional effect.",
+                  "isFieldMove": null,
+                  "isGMax": null,
+                  "isNonstandard": null,
+                  "isZ": null,
+                  "maxMovePower": 100,
+                  "name": "Vine Whip",
+                  "pp": 25,
+                  "priority": 0,
+                  "shortDesc": "No additional effect.",
+                  "target": "Normal",
+                  "type": "Grass",
+                  "zMovePower": 100
+                },
+                "generation": 3,
+                "level": 1
+              }
+            ]
+          }
+        },
+        "otherFormes": [
+          "venusaurmega",
+          "venusaurgmax"
+        ],
+        "species": "venusaur",
+        "sprite": "https://play.pokemonshowdown.com/sprites/ani/venusaur.gif",
+        "types": [
+          {
+            "name": "Grass"
+          },
+          {
+            "name": "Poison"
+          }
+        ],
+        "abilities": {
+          "first": {
+            "key": "overgrow",
+            "bulbapediaPage": "https://bulbapedia.bulbagarden.net/wiki/Overgrow_(Ability)",
+            "desc": "When this Pokémon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.",
+            "isFieldAbility": null,
+            "name": "Overgrow",
+            "serebiiPage": "https://www.serebii.net/abilitydex/overgrow.shtml",
+            "shortDesc": "At 1/3 or less of its max HP, this Pokémon's attacking stat is 1.5x with Grass attacks.",
+            "smogonPage": "https://www.smogon.com/dex/ss/abilities/overgrow"
+          }
+        },
+        "weight": 100
+      }
+    ]
+  }
+}

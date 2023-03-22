@@ -4,4 +4,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+
+  resources :base_pokemons, only: :index
+  resources :pokemons, only: :index
+  resources :encounters, only: :new
+  resources :battles, only: [:new, :create, :show]
 end

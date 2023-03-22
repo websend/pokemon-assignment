@@ -1,24 +1,44 @@
-# README
+### Introductie
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Het doel van deze opdracht is om Pokémon in het wild te kunnen vangen en toe te voegen aan je collectie van Pokémon. Het ophalen en opslaan van alle Pokémon is al geregeld, evenals een basic setup voor een encounter en een battle. Jij maakt het mogelijk om een wilde Pokémon te vangen, te verslaan of juist ver van weg te vluchten. Succes!
 
-Things you may want to cover:
+### Start
 
-* Ruby version
+- Clone deze app
+- Run `Import::Processor.run` om alle Pokémon in te laden
+- Open de app en controleer of de Pokédex is in te zien
+- Run `rails db:seed` om trainer Ash Ketchum met Pikachu als Pokémon aan te maken
 
-* System dependencies
+### Acceptatiecriteria
 
-* Configuration
+1. Wanneer je binnenkomt op `/encounters/new` start een encounter met een willekeurige Pokémon
+    - De volgende restricties gelden:
+        - Het level van de wilde Pokémon is maximaal 3 hoger of lager dan jouw Pokémon
+        - Bereken de stats van de wilde Pokémon op basis van level en de `BasePokemon` stats
+    - Dit mag een volstrekt willekeurige Pokémon zijn
+    - De volgende restricties gelden:
+        - Het level van de wilde Pokémon is maximaal 3 hoger of lager dan jouw Pokémon
+        - Bereken de stats van de wilde Pokémon op basis van level en de `BasePokemon` stats
+    - Wanneer op “Start” wordt geklikt moet een battle zijn aangemaakt met de juiste Pokémon
+2. Het is mogelijk om te vluchten tijdens het gevecht
+    - In het gevecht is er een “Escape”-actie met een 50% slagingskans
+    - Het gevecht eindigt met state `escaped` wanneer het gelukt is
+3. Het is mogelijk om een wilde Pokémon tijdens een gevecht te vangen
+    - In het gevecht is er een “Capture”-actie met een 50% slagingskans
+    - Wanneer het vangen mislukt is er een kans van 30% dat de Pokémon vlucht
+    - Het gevecht eindigt met state `captured` wanneer het gelukt is
+4. Het is mogelijk om de wilde Pokémon te verslaan in een gevecht
+    - De volgende regels gelden voor het gevecht:
+        1. De eerste Pokémon uit de collectie van de Pokémon trainer start het gevecht
+        2. Een gevecht bestaat uit meerdere rondes en in elke ronde mag de Pokémon van de trainer en de wilde Pokémon één actie (vechten, vangen of vluchten) uitvoeren
+        3. Wie de ronde start wordt bepaald door de snelheid van de Pokémon
+        4. Het gevecht eindigt wanneer een van de Pokémon is verslagen
+    - De state wordt aangepast naar het resultaat en het is duidelijk wie gewonnen heeft
 
-* Database creation
+### Bonus
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Gebruik Turbo Frames of Streams (Hotwire) voor een vlotte gebruikerservaring
+- Laat de slagingskans voor het vangen afhangen van de hoeveelheid HP die de Pokémon nog over heeft:
+    - 0-30% HP: 80% kans
+    - 31-70% HP: 40% kans
+    - 71-100% HP: 20% kans

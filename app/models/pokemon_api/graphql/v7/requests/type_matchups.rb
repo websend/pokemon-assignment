@@ -6,14 +6,13 @@ module PokemonApi
           def self.retrieve(primary_type:, secondary_type: nil)
             response = PokemonApi::Graphql::V7::Client.query(
               <<~GRAPHQL
-                query GetTypeMatchup($primaryType: TypesEnum!, $secondaryType: TypesEnum) {
-                  getTypeMatchup(primaryType: $primaryType, secondaryType: $secondaryType) {
+                query {
+                  getTypeMatchup(primaryType: #{primary_type}, secondaryType: #{secondary_type || primary_type}) {
                     attacking {
                       doubleEffectiveTypes
                       doubleResistedTypes
                       effectiveTypes
                       effectlessTypes
-                      normalTypes
                       resistedTypes
                     }
                     defending {
@@ -21,13 +20,13 @@ module PokemonApi
                       doubleResistedTypes
                       effectiveTypes
                       effectlessTypes
-                      normalTypes
                       resistedTypes
                     }
                   }
                 }
               GRAPHQL
             )
+            
 
             response.dig("data", "getTypeMatchup") || []
           end

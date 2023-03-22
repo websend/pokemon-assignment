@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+trainer = Trainer.create(name: "Ash Ketchum")
+
+Pokemon.create(
+  base_pokemon: BasePokemon.find_by(name: "Pikachu"),
+  trainer: trainer,
+  level: 1,
+  hp: 35,
+  attack: 55,
+  special_attack: 50,
+  defense: 40,
+  special_defense: 50,
+  speed: 90,
+  current_hp: 35,
+  current_attack: 55,
+  current_special_attack: 50,
+  current_defense: 40,
+  current_special_defense: 50,
+  current_speed: 90,
+  current_experience: 0,
+  experience_to_level: 0
+)

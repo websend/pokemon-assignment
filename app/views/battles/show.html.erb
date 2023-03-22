@@ -1,0 +1,25 @@
+<div class="hero h-auto p-20">
+  <div class="hero-content">
+    <div class="max-w-md">
+
+
+      <div class="card w-96 shadow-xl mt-20">
+        <div class="card-image border-solid border-2 border-primary-content rounded-tl-xl rounded-tr-lg">
+          <figure class="image-full" style="height:150px">
+            <%= image_tag(@battle.opponent.sprite) %>
+          </figure>
+        </div>
+        <div class="card-body bg-primary-content rounded-bl-xl rounded-br-lg items-center text-center">
+          <h2 class="card-title text-center">
+            <%= @battle.trainer.name %> VS <%= @battle.opponent.name %>
+          </h2>
+          <p>Implement the actual battle.</p>
+          <div class="divider"></div>
+          <div class="card-actions">
+            <button class="btn btn-primary">Do something</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

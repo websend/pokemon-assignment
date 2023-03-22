@@ -1,9 +1,9 @@
 <div class="navbar bg-base-100 justify-end">
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><%= link_to "Pack simulator", "#" %></li>
-      <li><%= link_to "Card generator", "#" %></li>
-      <li><%= link_to "Pokédex", "#" %></li>
+      <li><%= link_to "Battle Arena" %></li>
+      <li><%= link_to "Catch Pokémon", new_encounter_path, class: ("active" if current_page?(new_encounter_path)) %></li>
+      <li><%= link_to "Pokédex", base_pokemons_path, class: ("active" if current_page?(controller: "base_pokemons")) %></li>
     </ul>
   </div>
 </div>

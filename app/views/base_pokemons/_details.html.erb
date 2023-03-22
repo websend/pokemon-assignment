@@ -1,0 +1,67 @@
+<input type="checkbox" id="my-modal-<%= base_pokemon.id %>" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-<%= base_pokemon.id %>" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <h2 class="text-lg font-bold"><%= base_pokemon.slug.titleize %></h2>
+    <p class="py-1">
+      <%= base_pokemon.description %>
+    </p>
+
+    <div class="divider">Base Stats</div>
+
+    <p>
+
+      <div class="flex grid-cols-2">
+        <div class="stat">
+          <div class="stat-title">Attack</div>
+          <div class="stat-value text-primary"><%= base_pokemon.attack %></div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Defense</div>
+          <div class="stat-value text-primary"><%= base_pokemon.defense %></div>
+        </div>
+      </div>
+      <div class="flex grid-cols-2">
+        <div class="stat">
+          <div class="stat-title">Special Attack</div>
+          <div class="stat-value text-primary"><%= base_pokemon.special_attack %></div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Special Defense</div>
+          <div class="stat-value text-primary"><%= base_pokemon.special_defense %></div>
+        </div>
+      </div>
+      <div class="flex grid-cols-2">
+        <div class="stat">
+          <div class="stat-title">HP</div>
+          <div class="stat-value text-primary"><%= base_pokemon.hp %></div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Speed</div>
+          <div class="stat-value text-primary"><%= base_pokemon.speed %></div>
+        </div>
+      </div>
+    </p>
+
+    <% type_matchup = TypeMatchup.find_by(
+      primary_type: base_pokemon.pokemon_types.first,
+      secondary_type: (base_pokemon.pokemon_types.last if base_pokemon.pokemon_types.size > 1)
+    ) %>
+
+    <div class="divider">Strengths</div>
+
+    <p>
+      <% type_matchup.strong_against.each do |type| %>
+        <div class="badge badge-outline"><%= type %></div>
+      <% end %>
+    </p>
+
+    <div class="divider">Weaknesses</div>
+
+    <p>
+      <% type_matchup.vulnerable_to.each do |type| %>
+        <div class="badge badge-outline"><%= type %></div>
+      <% end %>
+    </p>
+  </div>
+</div>

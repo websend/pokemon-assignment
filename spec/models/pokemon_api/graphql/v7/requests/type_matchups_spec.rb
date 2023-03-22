@@ -4,7 +4,7 @@ module PokemonApi
   module Graphql
     module V7
       module Requests
-        RSpec.describe GetTypeMatchup do
+        RSpec.describe TypeMatchups do
           describe ".retrieve" do
             let(:response_body) do
               [
@@ -38,7 +38,7 @@ module PokemonApi
 
             context "when a valid response is given" do
               it "returns a parsed response" do
-                result = described_class.retrieve
+                result = described_class.retrieve(primary_type: "grass")
 
                 expect(result).to eql response_body
               end
