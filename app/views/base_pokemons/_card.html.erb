@@ -1,0 +1,23 @@
+<div class="card w-96 shadow-xl">
+  <div class="card-image border-solid border-2 border-primary-content rounded-tl-xl rounded-tr-lg">
+    <figure class="image-full" style="height:150px">
+      <%= image_tag(base_pokemon.sprite) %>
+    </figure>
+  </div>
+  <div class="card-body bg-primary-content rounded-bl-xl rounded-br-lg">
+    <h2 class="card-title">
+      <div class="badge badge-primary"><%= base_pokemon.dex_index %></div>
+      <label for=<%= "my-modal-#{base_pokemon.id}" %> class="link link-hover">
+        <%= base_pokemon.slug.titleize %>
+      </label>
+    </h2>
+    <p><%= base_pokemon.description %></p>
+    <div class="card-actions justify-end">
+      <% base_pokemon.pokemon_types.each do |base_pokemon_type| %>
+        <div class="badge badge-outline"><%= base_pokemon_type %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render partial: "details", locals: { base_pokemon: base_pokemon } %>

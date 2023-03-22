@@ -3,11 +3,12 @@ module PokemonApi
     module V7
       module Requests
         class Pokemons
+          # NOTE: For now we're only importing the first 50 Pokemon
           def self.retrieve
             response = PokemonApi::Graphql::V7::Client.query(
               <<~GRAPHQL
                 query {
-                  getAllPokemon(offset: 87) {
+                  getAllPokemon(offset: 89, take: 50) {
                     key
                     baseStats {
                       attack
@@ -22,8 +23,7 @@ module PokemonApi
                       base
                     }
                     evolutionLevel
-                    evolutions {
-                      num
+                    preevolutions {
                       key
                     }
                     flavorTexts {
@@ -64,9 +64,138 @@ module PokemonApi
                           level
                         }
                       }
+                      generation4 {
+                        levelUpMoves {
+                          move {
+                            key
+                            accuracy
+                            basePower
+                            category
+                            contestType
+                            desc
+                            isFieldMove
+                            isGMax
+                            isNonstandard
+                            isZ
+                            maxMovePower
+                            name
+                            pp
+                            priority
+                            shortDesc
+                            target
+                            type
+                            zMovePower
+                          }
+                          generation
+                          level
+                        }
+                      }
+                      generation5 {
+                        levelUpMoves {
+                          move {
+                            key
+                            accuracy
+                            basePower
+                            category
+                            contestType
+                            desc
+                            isFieldMove
+                            isGMax
+                            isNonstandard
+                            isZ
+                            maxMovePower
+                            name
+                            pp
+                            priority
+                            shortDesc
+                            target
+                            type
+                            zMovePower
+                          }
+                          generation
+                          level
+                        }
+                      }
+                      generation6 {
+                        levelUpMoves {
+                          move {
+                            key
+                            accuracy
+                            basePower
+                            category
+                            contestType
+                            desc
+                            isFieldMove
+                            isGMax
+                            isNonstandard
+                            isZ
+                            maxMovePower
+                            name
+                            pp
+                            priority
+                            shortDesc
+                            target
+                            type
+                            zMovePower
+                          }
+                          generation
+                          level
+                        }
+                      }
+                      generation7 {
+                        levelUpMoves {
+                          move {
+                            key
+                            accuracy
+                            basePower
+                            category
+                            contestType
+                            desc
+                            isFieldMove
+                            isGMax
+                            isNonstandard
+                            isZ
+                            maxMovePower
+                            name
+                            pp
+                            priority
+                            shortDesc
+                            target
+                            type
+                            zMovePower
+                          }
+                          generation
+                          level
+                        }
+                      }
+                      generation8 {
+                        levelUpMoves {
+                          move {
+                            key
+                            accuracy
+                            basePower
+                            category
+                            contestType
+                            desc
+                            isFieldMove
+                            isGMax
+                            isNonstandard
+                            isZ
+                            maxMovePower
+                            name
+                            pp
+                            priority
+                            shortDesc
+                            target
+                            type
+                            zMovePower
+                          }
+                          generation
+                          level
+                        }
+                      }
                     }
-                    otherFormes
-                    species
+                    levellingRate
                     sprite
                     weight
                   }
