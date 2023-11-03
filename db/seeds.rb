@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-trainer = Trainer.create(name: "Ash Ketchum")
+trainer = Trainer.where(name: "Ash Ketchum").first_or_create
+pikachu = BasePokemon.find_by(name: "Pikachu")
 
-Pokemon.create(
-  base_pokemon: BasePokemon.find_by(name: "Pikachu"),
-  trainer: trainer,
+trainer.pokemons.where(
+  base_pokemon: pikachu,
   level: 1,
   hp: 35,
   attack: 55,
@@ -26,4 +26,4 @@ Pokemon.create(
   current_speed: 90,
   current_experience: 0,
   experience_to_level: 0
-)
+).first_or_create
