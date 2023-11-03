@@ -3,11 +3,12 @@
 Het doel van deze opdracht is om Pokémon in het wild te kunnen vangen en toe te voegen aan je collectie van Pokémon. Het ophalen en opslaan van alle Pokémon is al geregeld, evenals een basic setup voor een encounter en een battle. Jij maakt het mogelijk om een wilde Pokémon te vangen, te verslaan of juist ver van weg te vluchten. Succes!
 
 ### Start
-
 - Clone deze app
-- Run `Import::Processor.run` om alle Pokémon in te laden
-- Open de app en controleer of de Pokédex is in te zien
-- Run `rails db:seed` om trainer Ash Ketchum met Pikachu als Pokémon aan te maken
+- Run `bin/rails db:create` en `bin/rails db:migrate`
+- Run `bin/rails db:seed` om trainer Ash Ketchum met Pikachu als Pokémon aan te maken
+- Start de terminal en run `Import::Processor.run` om alle Pokémon in te laden
+- Installeer DaisyUI met npm install daisyui
+- Run `bin/dev` om de server te starten
 
 ### Acceptatiecriteria
 De volgende criteria zijn losse features en kunnen opeenvolgend worden geïmplementeerd. Probeer eerst een feature af te ronden, voordat met de volgende feature gestart wordt.
