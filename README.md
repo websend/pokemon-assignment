@@ -11,7 +11,7 @@ Het doel van deze opdracht is om Pokémon in het wild te kunnen vangen en toe te
 - Run `bin/dev` om de server te starten
 
 ### Acceptatiecriteria
-De volgende criteria zijn losse features en kunnen opeenvolgend worden geïmplementeerd. Probeer eerst een feature af te ronden, voordat met de volgende feature gestart wordt.
+De volgende criteria zijn losse features en kunnen opeenvolgend worden geïmplementeerd. Probeer eerst een feature af te ronden, voordat met de volgende feature gestart wordt. Schrijf unit tests die bevestigen dat de functionaliteit werkt.
 
 1. Wanneer je op Catch Pokémon in de navigatie klikt (`/encounters/new`) start een encounter met een willekeurige Pokémon
     - Elke keer als de pagina wordt geladen wordt een volstrekt willekeurige Pokémon getoond. Dit is al gebouwd
